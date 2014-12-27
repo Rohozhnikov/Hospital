@@ -22,30 +22,13 @@
 					<li><a href="about">About</a></li>
 					<li><a href="admin">admin</a></li>
 					<li><a href="medic">Medic</a></li>
-
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">More Pages <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.jsp">Left Sidebar</a></li>
-							<li class="active"><a href="sidebar-right.jsp">Right
-									Sidebar</a></li>
-							<li>	
-						</ul></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-expanded="true">Dropdown
-							<span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul></li>
-
+					<li><a href="sidebar-left.jsp">Left Sidebar</a></li>
+					<li class="active"><a href="sidebar-right.jsp">Right
+							Sidebar</a></li>
+					<li>
 					<li><a href="contact">Contact</a></li>
 					<li><a class="btn" href="#" data-toggle="modal"
-						data-target="#myModal"> LOG IN / SIGN UP</a></li>
+						data-target="#LogIn"> LOG IN / SIGN UP</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -53,7 +36,7 @@
 	</div>
 
 	<!-- Modal Login -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+	<div class="modal fade" id="LogIn" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -62,9 +45,7 @@
 						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
 					</button>
 					<h4 class="modal-title" id="myModalLabel">Authorization</h4>
-
 				</div>
-
 				<div class="modal-body">
 					<form role="form">
 						<div class="form-group">
@@ -81,19 +62,19 @@
 				</div>
 				<div class="modal-body">
 					<h4>
-						<a href="">Sign up?</a>
+						<a class="btn" href="#" data-toggle="modal" data-dismiss="modal"
+							data-target="#SignUp"> Sign up?</a>
 					</h4>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-primary">Log in</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Modal Registrate -->
-	<div class="modal fade" id="Registrate" tabindex="-1" role="dialog"
+	<!-- Modal Sign up -->
+	<div class="modal fade" id="SignUp" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -101,16 +82,63 @@
 					<button type="button" class="close" data-dismiss="modal">
 						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
 					</button>
-					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					<h4 class="modal-title" id="myModalLabel">Sign Up</h4>
 				</div>
-				<div class="modal-body">Registrate</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">First
+								Name:</label> <input type="text" class="form-control"
+								placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Last
+								Name:</label> <input type="text" class="form-control"
+								placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Phone:</label>
+							<input type="text" class="form-control" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">email:</label>
+							<input type="text" class="form-control" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Address:</label>
+							<input type="text" class="form-control" placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Login
+								ID:</label> <input type="text" class="form-control"
+								placeholder="Username">
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="control-label">Password:</label>
+							<input type="password" class="form-control"
+								placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="control-label">Confirm
+								password:</label> <input type="password" class="form-control"
+								placeholder="Password">
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-body">
+					<h4>
+						<a class="btn" href="#" data-toggle="modal" data-dismiss="modal"
+							data-target="#LogIn"> Log In?</a>
+					</h4>
+				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Save changes</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Log in</button>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
